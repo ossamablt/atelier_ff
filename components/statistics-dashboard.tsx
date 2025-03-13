@@ -39,7 +39,12 @@ const categoryData = [
   { name: "Menus", value: 500 },
 ]
 
+<<<<<<< HEAD
 const COLORS = ["#f97316", "#ea580c", "#c2410c", "#9a3412", "#7c2d12"]
+=======
+// Modern color palette
+const COLORS = ["#3b82f6", "#10b981", "#8b5cf6", "#f59e0b", "#ec4899"]
+>>>>>>> df7e64f (Updated latest version)
 
 const dailyData = Array.from({ length: 30 }, (_, i) => ({
   day: i + 1,
@@ -57,7 +62,11 @@ export function StatisticsDashboard() {
           change="+12.5%"
           isPositive={true}
           icon={<DollarSign className="h-5 w-5" />}
+<<<<<<< HEAD
           color="bg-orange-500"
+=======
+          color="bg-blue-500"
+>>>>>>> df7e64f (Updated latest version)
         />
         <SummaryCard
           title="Clients"
@@ -65,7 +74,11 @@ export function StatisticsDashboard() {
           change="+8.2%"
           isPositive={true}
           icon={<Users className="h-5 w-5" />}
+<<<<<<< HEAD
           color="bg-blue-500"
+=======
+          color="bg-emerald-500"
+>>>>>>> df7e64f (Updated latest version)
         />
         <SummaryCard
           title="Commandes"
@@ -73,7 +86,11 @@ export function StatisticsDashboard() {
           change="+5.4%"
           isPositive={true}
           icon={<ShoppingBag className="h-5 w-5" />}
+<<<<<<< HEAD
           color="bg-green-500"
+=======
+          color="bg-violet-500"
+>>>>>>> df7e64f (Updated latest version)
         />
         <SummaryCard
           title="Panier Moyen"
@@ -81,14 +98,22 @@ export function StatisticsDashboard() {
           change="-2.1%"
           isPositive={false}
           icon={<TrendingUp className="h-5 w-5" />}
+<<<<<<< HEAD
           color="bg-purple-500"
+=======
+          color="bg-amber-500"
+>>>>>>> df7e64f (Updated latest version)
         />
       </div>
 
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Monthly Sales Chart */}
+<<<<<<< HEAD
         <div className="bg-white p-4 rounded-lg shadow-sm border border-orange-100">
+=======
+        <div className="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+>>>>>>> df7e64f (Updated latest version)
           <h3 className="text-lg font-semibold mb-4">Ventes Mensuelles</h3>
           <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
@@ -98,16 +123,26 @@ export function StatisticsDashboard() {
                 <YAxis />
                 <Tooltip
                   formatter={(value) => [`€${value}`, "Ventes"]}
+<<<<<<< HEAD
                   contentStyle={{ backgroundColor: "#fff", borderColor: "#f97316" }}
                 />
                 <Bar dataKey="value" fill="#f97316" radius={[4, 4, 0, 0]} />
+=======
+                  contentStyle={{ backgroundColor: "#fff", borderColor: "#3b82f6" }}
+                />
+                <Bar dataKey="value" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+>>>>>>> df7e64f (Updated latest version)
               </BarChart>
             </ResponsiveContainer>
           </div>
         </div>
 
         {/* Category Distribution */}
+<<<<<<< HEAD
         <div className="bg-white p-4 rounded-lg shadow-sm border border-orange-100">
+=======
+        <div className="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+>>>>>>> df7e64f (Updated latest version)
           <h3 className="text-lg font-semibold mb-4">Répartition des Ventes par Catégorie</h3>
           <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
@@ -133,7 +168,11 @@ export function StatisticsDashboard() {
         </div>
 
         {/* Daily Sales Trend */}
+<<<<<<< HEAD
         <div className="bg-white p-4 rounded-lg shadow-sm border border-orange-100 lg:col-span-2">
+=======
+        <div className="bg-white p-4 rounded-lg shadow-sm border border-blue-100 lg:col-span-2">
+>>>>>>> df7e64f (Updated latest version)
           <h3 className="text-lg font-semibold mb-4">Tendance des Ventes Quotidiennes</h3>
           <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
@@ -143,12 +182,20 @@ export function StatisticsDashboard() {
                 <YAxis />
                 <Tooltip
                   formatter={(value) => [`€${value}`, "Ventes"]}
+<<<<<<< HEAD
                   contentStyle={{ backgroundColor: "#fff", borderColor: "#f97316" }}
+=======
+                  contentStyle={{ backgroundColor: "#fff", borderColor: "#3b82f6" }}
+>>>>>>> df7e64f (Updated latest version)
                 />
                 <Line
                   type="monotone"
                   dataKey="sales"
+<<<<<<< HEAD
                   stroke="#f97316"
+=======
+                  stroke="#3b82f6"
+>>>>>>> df7e64f (Updated latest version)
                   strokeWidth={2}
                   dot={{ r: 3 }}
                   activeDot={{ r: 8 }}
@@ -173,12 +220,20 @@ interface SummaryCardProps {
 
 function SummaryCard({ title, value, change, isPositive, icon, color }: SummaryCardProps) {
   return (
+<<<<<<< HEAD
     <div className="bg-white p-4 rounded-lg shadow-sm border border-orange-100">
+=======
+    <div className="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+>>>>>>> df7e64f (Updated latest version)
       <div className="flex justify-between items-start">
         <div>
           <p className="text-sm text-gray-500">{title}</p>
           <p className="text-2xl font-bold mt-1">{value}</p>
+<<<<<<< HEAD
           <div className={`flex items-center mt-1 ${isPositive ? "text-green-600" : "text-red-600"}`}>
+=======
+          <div className={`flex items-center mt-1 ${isPositive ? "text-emerald-600" : "text-red-600"}`}>
+>>>>>>> df7e64f (Updated latest version)
             {isPositive ? <ArrowUp className="h-4 w-4 mr-1" /> : <ArrowDown className="h-4 w-4 mr-1" />}
             <span className="text-sm font-medium">{change}</span>
           </div>
